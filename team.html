@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team | Prime Digital Solutions</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+overflow-x:hidden;
+}
+
+h1,h2,h3{
+font-weight:600;
+}
+
+section{
+padding:80px 8%;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.6);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+backdrop-filter:blur(10px);
+}
+
+header h2{
+color:#00f5ff;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f5ff;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.team-hero{
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:80px;
+}
+
+.team-hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.team-hero span{
+color:#00f5ff;
+}
+
+.team-hero p{
+max-width:800px;
+margin:auto;
+opacity:0.8;
+line-height:1.6;
+}
+
+/* ================= TEAM GRID ================= */
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.team-card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+text-align:center;
+backdrop-filter:blur(10px);
+transition:0.4s;
+cursor:pointer;
+}
+
+.team-card:hover{
+transform:translateY(-10px);
+background:rgba(0,245,255,0.15);
+}
+
+.team-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:3px solid #00f5ff;
+}
+
+.team-card h3{
+margin-bottom:5px;
+}
+
+.team-card p{
+opacity:0.7;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.social{
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.social a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#00f5ff;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:2000;
+}
+
+.modal-content{
+background:#111;
+padding:40px;
+border-radius:15px;
+max-width:600px;
+width:100%;
+text-align:center;
+position:relative;
+}
+
+.modal-content h3{
+margin-bottom:15px;
+color:#00f5ff;
+}
+
+.modal-content p{
+line-height:1.6;
+opacity:0.8;
+}
+
+.close-btn{
+position:absolute;
+top:10px;
+right:15px;
+font-size:22px;
+cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+nav{
+position:absolute;
+top:70px;
+right:0;
+flex-direction:column;
+background:#111;
+width:200px;
+display:none;
+padding:20px;
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.team-hero h1{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Prime Digital Solutions</h2>
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="team.html">Team</a>
+<a href="blog.html">Blog</a>
+<a href="c.html">Contact</a>
+<a href="A.html">About</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="team-hero">
+<div class="container">
+<h1>Meet Our <span>Expert Team</span></h1>
+<p>
+Prime Digital Solutions is powered by a passionate team of digital marketers,
+creative designers, developers, strategists, and innovators.
+Our team works together to build powerful brands,
+create high-converting marketing campaigns,
+and deliver cutting-edge digital solutions.
+</p>
+</div>
+</section>
+
+<!-- TEAM MEMBERS -->
+<section>
+<div class="container">
+
+<h2 style="text-align:center;">Leadership Team</h2>
+
+<div class="team-grid">
+
+<div class="team-card" onclick="openModal('Daksh Kumar','Founder & CEO','Daksh Kumar is the visionary founder of Prime Digital Solutions. He leads the company with innovation, strategy, and a passion for digital growth. He specializes in digital marketing, automation, branding, and business scaling.')">
+<img src="Manager.jpeg">
+<h3>Daksh Kumar</h3>
+<p>Founder & CEO</p>
+<div class="social">
+<a href="https://daksh2406.github.io/Daksh-kumar">🌐</a>
+<a href="Read.html">📘</a>
+<a href="Manager.jpeg">📸</a>
+</div>
+</div>
+
+<div class="team-card" onclick="openModal('Riya Sharma','Marketing Director','Riya handles all marketing strategies, paid ads, and client campaigns. She ensures measurable ROI and growth for businesses.')">
+<img src="Owner.jpeg">
+<h3>lakshaya</h3>
+<p>Marketing Director</p>
+<div class="social">
+<a href="Read2.html">🌐</a>
+<a href="Read3.html">📘</a>
+<a href="Owner.jpeg">📸</a>
+</div>
+</div>
+
+<div class="team-card" onclick="openModal('Aman Verma','Technical Head','Aman leads website development, UI/UX design, and automation systems for clients.')">
+<img src="https://i.pravatar.cc/150?img=3">
+<h3>Aman Verma</h3>
+<p>Technical Head</p>
+<div class="social">
+<a href="#">🌐</a>
+<a href="#">📘</a>
+<a href="#">📸</a>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="profileModal">
+<div class="modal-content">
+<span class="close-btn" onclick="closeModal()">✖</span>
+<h3 id="modalName"></h3>
+<h4 id="modalRole" style="margin-bottom:15px;"></h4>
+<p id="modalDesc"></p>
+</div>
+</div>
+
+<footer>
+© 2026 Prime Digital Solutions | All Rights Reserved
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+
+function openModal(name,role,desc){
+document.getElementById("profileModal").style.display="flex";
+document.getElementById("modalName").innerText=name;
+document.getElementById("modalRole").innerText=role;
+document.getElementById("modalDesc").innerText=desc;
+}
+
+function closeModal(){
+document.getElementById("profileModal").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

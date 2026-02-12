@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - Prime Digital Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+header{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px 8%;
+background:rgba(0,0,0,0.6);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+backdrop-filter:blur(10px);
+}
+
+header h2{ color:#00f5ff; }
+
+/* ===== HERO ===== */
+.hero{
+height:60vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:80px;
+}
+
+.hero h1{ font-size:48px; }
+.hero span{ color:#00f5ff; }
+
+/* ===== PRICING SLIDER ===== */
+.pricing{
+padding:80px 8%;
+background:#111;
+overflow:hidden;
+}
+
+.section-heading{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+color:#00f5ff;
+}
+
+.pricing-slider{
+display:flex;
+gap:30px;
+animation: scrollSlider 35s linear infinite;
+width:max-content;
+}
+
+.price-card{
+min-width:300px;
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+flex-shrink:0;
+}
+
+.price-card:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.price-card h1{
+margin:20px 0;
+color:#00f5ff;
+}
+
+.price-card ul{
+list-style:none;
+line-height:2;
+margin-bottom:20px;
+}
+
+/* PLAN BUTTON STYLE */
+.plan-btn{
+display:inline-block;
+padding:12px 30px;
+border-radius:30px;
+background:#00f5ff;
+color:black;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.plan-btn:hover{
+background:white;
+}
+
+/* SLIDER ANIMATION */
+@keyframes scrollSlider{
+0%{ transform:translateX(0); }
+100%{ transform:translateX(-50%); }
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>Prime Digital Solutions</h2>
+</header>
+
+<section class="hero">
+<h1>Our Professional <span>Digital Services</span></h1>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+
+<h2 class="section-heading">Our Pricing Plans</h2>
+
+<div class="pricing-slider">
+
+<!-- CARD 1 -->
+<div class="price-card">
+<h3>Starter Social Media</h3>
+<h1>₹4,999</h1>
+<ul>
+<li>12 Post Design</li>
+<li>Ad Campaign Setup</li>
+<li>Monthly Report</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<!-- CARD 2 -->
+<div class="price-card">
+<h3>Growth Social Media</h3>
+<h1>₹8,999</h1>
+<ul>
+<li>20 Posts</li>
+<li>4 Reels</li>
+<li>Analytics</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<!-- CARD 3 -->
+<div class="price-card">
+<h3>Pro Branding</h3>
+<h1>₹14,999</h1>
+<ul>
+<li>25 Posts</li>
+<li>Paid Ads</li>
+<li>Lead Setup</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<!-- CARD 4 -->
+<div class="price-card">
+<h3>Google Ads</h3>
+<h1>₹12,999</h1>
+<ul>
+<li>Search + Display</li>
+<li>Remarketing</li>
+<li>Optimization</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<!-- CARD 5 -->
+<div class="price-card">
+<h3>Website Premium</h3>
+<h1>₹18,999</h1>
+<ul>
+<li>10 Pages</li>
+<li>SEO</li>
+<li>Speed Optimization</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<!-- Duplicate Cards for Smooth Loop -->
+
+<div class="price-card">
+<h3>Starter Social Media</h3>
+<h1>₹4,999</h1>
+<ul>
+<li>12 Post Design</li>
+<li>Ad Campaign Setup</li>
+<li>Monthly Report</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<div class="price-card">
+<h3>Growth Social Media</h3>
+<h1>₹8,999</h1>
+<ul>
+<li>20 Posts</li>
+<li>4 Reels</li>
+<li>Analytics</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<div class="price-card">
+<h3>Pro Branding</h3>
+<h1>₹14,999</h1>
+<ul>
+<li>25 Posts</li>
+<li>Paid Ads</li>
+<li>Lead Setup</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<div class="price-card">
+<h3>Google Ads</h3>
+<h1>₹12,999</h1>
+<ul>
+<li>Search + Display</li>
+<li>Remarketing</li>
+<li>Optimization</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+<div class="price-card">
+<h3>Website Premium</h3>
+<h1>₹18,999</h1>
+<ul>
+<li>10 Pages</li>
+<li>SEO</li>
+<li>Speed Optimization</li>
+</ul>
+<a href="https://form.jotform.com/260420481870049" target="_blank" class="plan-btn">Choose Plan</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Prime Digital Solutions | All Rights Reserved
+</footer>
+
+</body>
+</html>

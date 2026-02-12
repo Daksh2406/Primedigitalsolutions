@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Prime Digital Solutions</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    line-height:1.7;
+}
+
+/* ===== HEADER ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#122b33;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+header h2{
+    color:#00f5ff;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f5ff;
+}
+
+.menu-btn{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* ===== HERO ===== */
+.hero{
+    padding:150px 8% 80px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#00f5ff;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    opacity:0.9;
+}
+
+/* ===== SECTION ===== */
+.section{
+    padding:80px 8%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#00f5ff;
+    font-size:35px;
+}
+
+.section p{
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* ===== VALUES GRID ===== */
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.value-box{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.value-box:hover{
+    transform:translateY(-10px);
+}
+
+/* ===== TEAM ===== */
+.team{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.team-member{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.team-member h3{
+    color:#00f5ff;
+}
+
+/* ===== COUNTER ===== */
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:60px 8%;
+    background:#111;
+    text-align:center;
+}
+
+.stat{
+    margin:20px;
+}
+
+.stat h2{
+    font-size:40px;
+    color:#00f5ff;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0a0a0a;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+    nav{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#122b33;
+        flex-direction:column;
+        width:200px;
+        display:none;
+        padding:20px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Prime Digital Solutions</h2>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>About <span>Prime Digital Solutions</span></h1>
+    <p>
+        Prime Digital Solutions is a result-driven digital marketing and IT innovation company dedicated to helping businesses grow in the modern digital world. 
+        We combine creativity, technology, and strategy to build powerful digital brands that stand out in competitive markets.
+    </p>
+</section>
+
+<!-- OUR STORY -->
+<section class="section">
+<h2>Our Story</h2>
+
+<p>
+Prime Digital Solutions was founded with a simple yet powerful vision — to empower businesses with digital excellence. 
+In today’s fast-changing online world, businesses need more than just a website; they need strategy, visibility, engagement, and measurable growth. 
+That’s where we step in.
+</p>
+
+<p>
+From humble beginnings to becoming a trusted digital partner for multiple brands, our journey has been driven by passion, innovation, and commitment. 
+We started with small local projects, helping startups establish their online presence. Over time, through dedication and consistent results, we expanded our services into full-scale digital marketing, branding, SEO, paid advertising, and advanced IT solutions.
+</p>
+
+<p>
+Our approach has always been client-focused. We believe in understanding business goals deeply before creating solutions. 
+Every project we take is treated as our own brand. This mindset has allowed us to build long-term relationships and trust with clients.
+</p>
+
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section">
+<h2>Mission & Vision</h2>
+
+<p><strong>Our Mission:</strong> To deliver innovative digital solutions that drive measurable growth and help brands achieve sustainable success in the online world.</p>
+
+<p><strong>Our Vision:</strong> To become a leading digital transformation company recognized for creativity, strategy, and results across industries.</p>
+
+<p>
+We believe technology is not just about tools — it is about impact. Our mission is to bridge the gap between businesses and their digital potential.
+</p>
+
+</section>
+
+<!-- CORE VALUES -->
+<section class="section">
+<h2>Our Core Values</h2>
+
+<div class="values">
+    <div class="value-box">
+        <h3>Innovation</h3>
+        <p>We constantly explore new technologies, strategies, and creative ideas to stay ahead of digital trends.</p>
+    </div>
+
+    <div class="value-box">
+        <h3>Transparency</h3>
+        <p>We believe in honest communication and clear reporting for every project.</p>
+    </div>
+
+    <div class="value-box">
+        <h3>Commitment</h3>
+        <p>Client success is our priority. We are committed to delivering excellence.</p>
+    </div>
+
+    <div class="value-box">
+        <h3>Growth Mindset</h3>
+        <p>Continuous learning and improvement drive our long-term success.</p>
+    </div>
+</div>
+
+</section>
+
+<!-- TEAM -->
+<section class="section">
+<h2>Our Leadership Team</h2>
+
+<div class="team">
+    <div class="team-member">
+        <h3>Daksh Kumar</h3>
+        <p>Founder & Digital Strategist</p>
+    </div>
+
+    <div class="team-member">
+        <h3>Marketing Head</h3>
+        <p>Performance Marketing Expert</p>
+    </div>
+
+    <div class="team-member">
+        <h3>Creative Director</h3>
+        <p>Branding & UI/UX Specialist</p>
+    </div>
+
+    <div class="team-member">
+        <h3>Technical Lead</h3>
+        <p>Web Development & Automation</p>
+    </div>
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat">
+        <h2 class="counter" data-target="100">0</h2>
+        <p>Happy Clients</p>
+    </div>
+
+    <div class="stat">
+        <h2 class="counter" data-target="250">0</h2>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat">
+        <h2 class="counter" data-target="5">0</h2>
+        <p>Years Experience</p>
+    </div>
+</section>
+
+<footer>
+© 2026 Prime Digital Solutions | All Rights Reserved
+</footer>
+
+<script>
+
+/* MENU */
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+
+/* COUNTER */
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 100;
+
+        if(current < target){
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+
+</script>
+
+</body>
+</html>
